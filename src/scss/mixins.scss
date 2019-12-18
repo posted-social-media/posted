@@ -1,0 +1,8 @@
+@import "./variables.scss";
+
+@mixin flex($flow: row wrap, $justify: center, $align: center) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+}
