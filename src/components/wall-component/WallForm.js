@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 
 //styled components
-import { FormContainer, LabelContainer, Message } from "./WallStyles";
+import {
+  FormContainer,
+  LabelContainer,
+  Message,
+  SubmitBtn
+} from "./WallStyles";
 
 const WallForm = ({ addPost }) => {
   //data to be sent to WallContainer
@@ -34,7 +39,7 @@ const WallForm = ({ addPost }) => {
           onChange={e => handler(e)}
         ></Message>
       </LabelContainer>
-      <button type="submit">Post</button>
+      <SubmitBtn type="submit">Post</SubmitBtn>
     </FormContainer>
   );
 };
