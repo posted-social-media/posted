@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+//styled components
+import { FormContainer, LabelContainer, Message } from "./WallStyles";
+
 const WallForm = ({ addPost }) => {
   //data to be sent to WallContainer
   const [post, setPost] = useState({
@@ -22,19 +25,17 @@ const WallForm = ({ addPost }) => {
   };
 
   return (
-    <form onSubmit={e => submit(e)}>
-      <label>
+    <FormContainer onSubmit={e => submit(e)}>
+      <LabelContainer>
         Label here
-        <textarea
+        <Message
           name="postMessage"
           value={post.postMessage}
-          cols="30"
-          rows="10"
           onChange={e => handler(e)}
-        ></textarea>
-      </label>
+        ></Message>
+      </LabelContainer>
       <button type="submit">Post</button>
-    </form>
+    </FormContainer>
   );
 };
 

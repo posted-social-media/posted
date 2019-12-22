@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import WallPost from "./WallPosts";
 import WallForm from "./WallForm";
 
+//Styled components
+import { Wall } from "./WallStyles";
+
 const WallContainer = () => {
   //data to be displayed in WallPost Component
   const [data, setData] = useState([]);
@@ -14,10 +17,10 @@ const WallContainer = () => {
   };
 
   return (
-    <div>
+    <Wall>
       <WallForm addPost={addPost} />
       <WallPost data={data} />
-    </div>
+    </Wall>
   );
 };
 

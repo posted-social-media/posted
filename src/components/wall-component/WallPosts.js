@@ -2,10 +2,10 @@ import React from "react";
 
 const WallPost = ({ data }) => {
   return (
-    <div className="post-container">
+    <div>
       {data.map(post => {
         return (
-          <div className="single-post">
+          <div key={post.postMesage}>
             <h2>Name of user here</h2>
             <button>Delete</button>
             <div>
