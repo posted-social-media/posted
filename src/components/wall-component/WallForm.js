@@ -6,7 +6,7 @@ import {
   LabelContainer,
   Message,
   SubmitBtn
-} from "./WallStyles";
+} from "../../theme/WallStyles";
 
 const WallForm = ({ addPost }) => {
   //data to be sent to WallContainer
@@ -34,12 +34,11 @@ const WallForm = ({ addPost }) => {
       <LabelContainer>
         Label here
         <Message
-          name="postMessage"
+          name='postMessage'
           value={post.postMessage}
-          onChange={e => handler(e)}
-        ></Message>
+          onChange={e => handler(e)}></Message>
       </LabelContainer>
-      <SubmitBtn type="submit">Post</SubmitBtn>
+      <SubmitBtn type='submit'>Post</SubmitBtn>
     </FormContainer>
   );
 };

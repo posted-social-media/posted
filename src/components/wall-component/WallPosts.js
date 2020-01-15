@@ -11,7 +11,7 @@ import {
   Comment,
   MessageContainer,
   Content
-} from "./WallStyles";
+} from "../../theme/WallStyles";
 
 const WallPost = ({ data }) => {
   return (
