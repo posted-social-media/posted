@@ -1,11 +1,11 @@
 import React from "react";
-import SampleComponent from "../components/SampleComponent";
+
+import WallContainer from "../components/wall-component/WallContainer";
 
 const Profile = () => {
   return (
     <div>
-      <SampleComponent />
-      <h5>This is where components will live</h5>
+      <WallContainer />
     </div>
   );
 };
