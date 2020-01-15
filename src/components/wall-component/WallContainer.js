@@ -5,7 +5,7 @@ import WallPost from "./WallPosts";
 import WallForm from "./WallForm";
 
 //Styled components
-import { Wall } from "./WallStyles";
+import { Wall } from "../../theme/WallStyles";
 
 const WallContainer = () => {
   //data to be displayed in WallPost Component
