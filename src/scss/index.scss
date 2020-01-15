@@ -2,6 +2,9 @@
 @import "./mixins.scss";
 @import "./reset.scss";
 
+// Components style sheets
+@import "./navigation.scss";
+
 // Remember... '#' are id's, and '.' are classes.
 // If there is only one element on the page, use an id, if it will be repeated use classes.
 
