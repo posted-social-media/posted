@@ -7,8 +7,8 @@ import {
     Nav,
     NavItem,
     NavLink,
-    NavbarText
   } from 'reactstrap';
+// import NavLogo from '../resources/img/posted-logo-full-mono.png';
 
 
 export default function NavBar (props) {
@@ -33,7 +33,9 @@ export default function NavBar (props) {
               <NavLink href=""><i class="fas fa-cog"></i></NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>posted</NavbarText>
+          {/* <NavItem>
+            <img src={NavLogo}/>
+          </NavItem> */}
         </Collapse>
       </Navbar>
     </div>
