@@ -8,7 +8,8 @@ import {
     NavItem,
     NavLink,
   } from 'reactstrap';
-// import NavLogo from '../resources/img/posted-logo-full-mono.png';
+// import NavLogo from '.../resources/img/posted-logo-full-mono.png';
+
 
 
 export default function NavBar (props) {
@@ -27,7 +28,13 @@ export default function NavBar (props) {
               <NavLink href="/components/"><i class="fas fa-user"></i></NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/components/"><i class="fas fa-users"></i></NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href=""><i class="fas fa-store"></i></NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href=""><i class="fas fa-search"></i></NavLink>
             </NavItem>
             <NavItem>
               <NavLink href=""><i class="fas fa-cog"></i></NavLink>
